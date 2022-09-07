@@ -16,14 +16,15 @@ type IPsService service
 
 // IP represents a CloudSigma IP address.
 type IP struct {
-	Gateway     string                 `json:"gateway,omitempty"`
-	Meta        map[string]interface{} `json:"meta,omitempty"`
-	Nameservers []string               `json:"nameservers,omitempty"`
-	Netmask     int                    `json:"netmask,omitempty"`
-	Owner       *ResourceLink          `json:"owner,omitempty"`
-	ResourceURI string                 `json:"resource_uri,omitempty"`
-	Server      *ResourceLink          `json:"server,omitempty"`
-	UUID        string                 `json:"uuid,omitempty"`
+	Gateway      string                 `json:"gateway,omitempty"`
+	Meta         map[string]interface{} `json:"meta,omitempty"`
+	Nameservers  []string               `json:"nameservers,omitempty"`
+	Netmask      int                    `json:"netmask,omitempty"`
+	Owner        *ResourceLink          `json:"owner,omitempty"`
+	ResourceURI  string                 `json:"resource_uri,omitempty"`
+	Server       *ResourceLink          `json:"server,omitempty"`
+	Subscription *Subscription          `json:"subscription,omitempty"`
+	UUID         string                 `json:"uuid,omitempty"`
 }
 
 type ipsRoot struct {
